@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IReview.cs" />
     <Compile Include="IReviewAverage.cs" />
     <Compile Include="ReviewAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +88,10 @@
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{a349dc2a-176f-4c0c-b127-8224283dce12}</Project>
       <Name>Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantFunctions\RestaurantFunctions.csproj">
+      <Project>{bbaef91e-84a3-4fad-b709-8666176b745b}</Project>
+      <Name>RestaurantFunctions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
