@@ -33,14 +33,10 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\MenuCUI.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\Newtonsoft.Json.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\NLog.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantFunctions.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\ReviewFunctions.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\SearchFunction.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\xunit.assert.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\xunit.core.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\xunit.execution.desktop.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantFunctions.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\ReviewFunctions.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\SearchFunction.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\NLog.xml
@@ -52,3 +48,5 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.csproj.CopyComplete
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantsReviews.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantsReviews.pdb

@@ -75,7 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="NLog.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -85,6 +87,18 @@
     <ProjectReference Include="..\MenuCUI\MenuCUI.csproj">
       <Project>{7e5bc247-a8bd-480b-b822-f345717bd1f1}</Project>
       <Name>MenuCUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{a349dc2a-176f-4c0c-b127-8224283dce12}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantsReviews\RestaurantsReviews.csproj">
+      <Project>{dbf34269-a262-44d3-87b2-2fb708dbe153}</Project>
+      <Name>RestaurantsReviews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SearchFunction\SearchFunctions.csproj">
+      <Project>{710e029c-b47b-4c56-b9f0-f8e4b22ce393}</Project>
+      <Name>SearchFunctions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

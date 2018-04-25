@@ -68,8 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="ISearch.cs" />
+    <Compile Include="ISearchRestaurants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -87,13 +86,9 @@
       <Project>{a349dc2a-176f-4c0c-b127-8224283dce12}</Project>
       <Name>Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RestaurantFunctions\RestaurantFunctions.csproj">
-      <Project>{bbaef91e-84a3-4fad-b709-8666176b745b}</Project>
-      <Name>RestaurantFunctions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ReviewFunctions\ReviewFunctions.csproj">
-      <Project>{2f8ff6cb-5c05-495a-9ddf-61e42f9106e8}</Project>
-      <Name>ReviewFunctions</Name>
+    <ProjectReference Include="..\RestaurantsReviews\RestaurantsReviews.csproj">
+      <Project>{dbf34269-a262-44d3-87b2-2fb708dbe153}</Project>
+      <Name>RestaurantsReviews</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

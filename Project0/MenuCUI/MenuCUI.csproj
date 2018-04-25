@@ -88,14 +88,6 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RestaurantFunctions\RestaurantFunctions.csproj">
-      <Project>{bbaef91e-84a3-4fad-b709-8666176b745b}</Project>
-      <Name>RestaurantFunctions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ReviewFunctions\ReviewFunctions.csproj">
-      <Project>{2f8ff6cb-5c05-495a-9ddf-61e42f9106e8}</Project>
-      <Name>ReviewFunctions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SearchFunction\SearchFunctions.csproj">
       <Project>{710e029c-b47b-4c56-b9f0-f8e4b22ce393}</Project>
       <Name>SearchFunctions</Name>

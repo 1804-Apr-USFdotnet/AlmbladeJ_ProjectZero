@@ -38,3 +38,9 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\obj
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\obj\Debug\SearchFunctions.csproj.CopyComplete
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\obj\Debug\SearchFunction.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\obj\Debug\SearchFunction.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\Repository.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\Repository.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\RestaurantsReviews.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\RestaurantsReviews.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\repo.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\SearchFunction\bin\Debug\NLog.config
