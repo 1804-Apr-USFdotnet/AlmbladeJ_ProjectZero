@@ -23,7 +23,7 @@ namespace Palindrome
 
                 for (int i = 0; i < s.Length; i++)
                 {
-                    if (((s[i] >= 0) && (s[i] <=9)) || ((s[i] >= 'A') && (s[i] <= 'z')))
+                    if (((s[i] >= '0') && (s[i] <='9')) || ((s[i] >= 'A') && (s[i] <= 'z')))
                         {
                         StrBuilder.Append(s[i]);
                     }
