@@ -1,54 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Linq.Expressions;
 using System.Linq;
-using System.IO;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Data.Entity;
 
 namespace Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected JsonSerializer serializer;
-        protected List<TEntity> entityList;
+        protected readonly DbContext db;
 
-        public Repository(string FileSource)
+        public Repository(DbContext context)
         {
-            serializer = new JsonSerializer();
-            entityList = JArray.Parse(File.ReadAllText(FileSource)).ToObject<List<TEntity>>();
-        }
-
-        public TEntity Get(int id)
-        {
-            return entityList[id-1];
-
-        }
-
-        public List<TEntity> GetAll()
-        {
-            return entityList;
-        }
-
-        public List<TEntity> Find(Predicate<TEntity> predicate)
-        {
-            return entityList.FindAll(predicate);
+            db = context;
         }
 
         public void Add(TEntity entity)
         {
-            entityList.Add(entity);
+            db.Set<TEntity>().Add(entity);
         }
 
+        public void AddRange(IEnumerable<TEntity> entities)
+        {
+            db.Set<TEntity>().AddRange(entities);
+        }
+
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
+        {
+            return db.Set<TEntity>().Where(predicate);
+        }
+
+        public TEntity Get(int id)
+        {
+            return db.Set<TEntity>().Find(id);
+        }
+
+        public IEnumerable<TEntity> GetAll()
+        {
+            return db.Set<TEntity>().ToList();
+        }
 
         public void Remove(TEntity entity)
         {
-            entityList.Remove(entity);
+            db.Set<TEntity>().Remove(entity);
         }
 
-        public void RemoveRange(int indexAt, int number)
+        public void RemoveRange(IEnumerable<TEntity> entities)
         {
-            entityList.RemoveRange(indexAt, number);
+            db.Set<TEntity>().RemoveRange(entities);
         }
     }
 }

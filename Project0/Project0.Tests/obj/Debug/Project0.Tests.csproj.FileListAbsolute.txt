@@ -165,6 +165,8 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\Moq.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\obj\Debug\Project0.Tests.dll.config
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantsReviews.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantsReviews.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\repo.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\Repository.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.SqlServer.xml

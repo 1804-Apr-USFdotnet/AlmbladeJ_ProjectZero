@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
-        IReviewRepository Reviews { get; set; }
-        IRestaurantRepository Restaurants { get; set; }
+        IRestaurantRepository RestaurantRepo { get; }
+        IReviewRepository ReviewRepo { get; }
 
-        void SaveRestaurants();
-        void SaveReviews();
+        int Complete();
     }
 }

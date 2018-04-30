@@ -1,83 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Schema;
-using Newtonsoft.Json.Linq;
-using System.IO;
-using RestaurantsReviews;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Repository
 {
-    class ReviewRepository : IRepository<Review>, IReviewRepository
+    public class ReviewRepository : Repository<Review>, IReviewRepository
     {
-        private JsonSerializer serializer;
-        private List<Review> entityList;
+        public ReviewRepository(PlutoContext db) : base(db) { }
 
-        public ReviewRepository(string FileSource)
+        public new void Add(Review entity)
         {
-            try
+            PlutoContext.Set<Review>().Add(entity);
+            int RestId = (int)entity.Restaurant;
+            PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+        }
+
+        public new void AddRange(IEnumerable<Review> entities)
+        {
+            PlutoContext.Set<Review>().AddRange(entities);
+            foreach (var item in entities)
             {
-                serializer = new JsonSerializer();
-                if (!File.Exists(FileSource))
-                {
-                    File.Create(FileSource);
-                }
-                entityList = new List<Review>();
-                entityList = JObject.Parse(File.ReadAllText(FileSource)).ToObject<List<Review>>();
+                int RestId = (int)item.Restaurant;
+                PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
             }
-            catch (Exception e)
+            
+        }
+
+        public new void Remove(Review entity)
+        {
+            PlutoContext.Set<Review>().Remove(entity);
+            int RestId = (int)entity.Restaurant;
+            PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+        }
+
+        public new void RemoveRange(IEnumerable<Review> entities)
+        {
+            PlutoContext.Set<Review>().RemoveRange(entities);
+            foreach (var item in entities)
             {
-                var logger = NLog.LogManager.GetCurrentClassLogger();
-                logger.Debug(e, e.Message);
+                int RestId = (int)item.Restaurant;
+                PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
             }
         }
 
-        public void Add(int userid, int restaurantid, int rating, string text)
+        public decimal AverageRatings(int RestaurantID)
         {
-            int i = entityList.Count() + 1;
-            entityList.Add(new Review()
-            {
-                ReviewID = i,
-                UserID = userid,
-                RestaurantID = restaurantid,
-                Rating = rating,
-                ReviewText = text
-            });
+            return (decimal)PlutoContext.Set<Review>().Where(x => x.Restaurant == RestaurantID).Average(x => x.Rating);
+               
         }
 
-        public List<Review> Find(Predicate<Review> predicate)
-        {
-            return (List<Review>)entityList.FindAll(predicate);
-        }
-
-        public Review Get(int id)
-        {
-            return (Review)entityList.Where(x => x.ReviewID == id);
-        }
-
-        public List<Review> GetAll()
-        {
-            return entityList;
-        }
-
-
-
-        public void Remove(Review entity)
-        {
-            entityList.Remove(entity);
-        }
-
-        public void RemoveRange(int indexAt, int number)
-        {
-            entityList.RemoveRange(indexAt, number);
-        }
-
-        //public double GetRatingAverage(int restaurantid)
-        //{
-        //    var items = entityList.Where(x => x.RestaurantID
-        //                                    == restaurantid).Select(x => x);
-        //    return items.Select(x => x.Rating).Average();
-        //}
+        public PlutoContext PlutoContext { get { return db as PlutoContext; } }
     }
 }

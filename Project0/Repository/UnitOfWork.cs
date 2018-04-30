@@ -1,67 +1,68 @@
 ﻿using System;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
-using System.IO;
-using NLog;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private string RestaurantSource;
-        private string ReviewSource;
+        private readonly PlutoContext db;
 
-        public UnitOfWork(string restaurantsource, string reviewsource)
+        public UnitOfWork(PlutoContext context)
         {
-            try
-            {
-                Restaurants = new RestaurantRepository(restaurantsource, reviewsource);
-                Reviews = new ReviewRepository(reviewsource);
-                RestaurantSource = restaurantsource;
-                ReviewSource = reviewsource;
-            } catch (Exception e)
-            {
-                var logger = NLog.LogManager.GetCurrentClassLogger();
-                logger.Debug(e, e.Message);
-            }
-
+            db = context;
+            RestaurantRepo = new RestaurantRepository(context);
+            ReviewRepo = new ReviewRepository(context);
         }
 
-        public IReviewRepository Reviews { get; set; }
-        public IRestaurantRepository Restaurants { get; set; }
+        public IRestaurantRepository RestaurantRepo { get; private set; }
+        public IReviewRepository ReviewRepo { get; private set; }
 
-        public void SaveRestaurants()
+        public int Complete()
         {
-            try
+            return db.SaveChanges();
+        }
+
+
+
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
             {
-                using (StreamWriter file = File.CreateText(RestaurantSource))
+                if (disposing)
                 {
-                    JsonSerializer ser = new JsonSerializer();
-                    ser.Serialize(file, Restaurants.GetAll());
+                    db.Dispose();
                 }
-            } catch (Exception e)
-            {
-                var logger = NLog.LogManager.GetCurrentClassLogger();
-                logger.Debug(e, e.Message);
+
+                // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+                // TODO: set large fields to null.
+
+                disposedValue = true;
             }
         }
 
-        public void SaveReviews()
+        // TODO: override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
+        // ~UnitOfWork() {
+        //   // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+        //   Dispose(false);
+        // }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
         {
-            try
-            {
-                using (StreamWriter file = File.CreateText(ReviewSource))
-                {
-                    JsonSerializer ser = new JsonSerializer();
-                    ser.Serialize(file, Reviews.GetAll());
-                }
-            }
-            catch (Exception e)
-            {
-                var logger = NLog.LogManager.GetCurrentClassLogger();
-                logger.Debug(e, e.Message);
-            }
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(true);
+            // TODO: uncomment the following line if the finalizer is overridden above.
+            // GC.SuppressFinalize(this);
         }
+
+
+        #endregion
     }
 }

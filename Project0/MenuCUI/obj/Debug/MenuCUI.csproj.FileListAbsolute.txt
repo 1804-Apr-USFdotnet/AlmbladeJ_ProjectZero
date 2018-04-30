@@ -48,5 +48,8 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.csproj.CopyComplete
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\obj\Debug\MenuCUI.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantsReviews.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\RestaurantsReviews.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\Repository.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\EntityFramework.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\Repository.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\Repository.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\MenuCUI\bin\Debug\EntityFramework.xml

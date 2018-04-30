@@ -1,16 +1,13 @@
-﻿using RestaurantsReviews;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository
 {
     public interface IRestaurantRepository : IRepository<Restaurant>
     {
-        void Add(string name,
-                       string address,
-                       string city,
-                       int zip,
-                       int phone,
-                       string website);
-        List<Restaurant> GetTop3();
+        IEnumerable<Restaurant> GetTopThree();
     }
 }

@@ -46,10 +46,12 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\obj\Debug
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\obj\Debug\Project0.csproj.CopyComplete
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\obj\Debug\Project0.exe
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\obj\Debug\Project0.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\repo.config
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Repository.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantsReviews.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\SearchFunction.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Repository.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantsReviews.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\SearchFunction.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Repository.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\EntityFramework.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\EntityFramework.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\EntityFramework.SqlServer.xml

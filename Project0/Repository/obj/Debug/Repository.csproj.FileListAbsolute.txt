@@ -38,7 +38,9 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\obj\Deb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\obj\Debug\Repository.csproj.CopyComplete
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\obj\Debug\Repository.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\obj\Debug\Repository.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\repo.config
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\RestaurantsReviews.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\RestaurantsReviews.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\NLog.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\Repository.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\EntityFramework.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\EntityFramework.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Repository\bin\Debug\EntityFramework.SqlServer.xml
