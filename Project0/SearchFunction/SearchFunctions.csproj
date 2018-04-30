@@ -68,7 +68,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDisplayOrder.cs" />
+    <Compile Include="DisplayAll.cs" />
+    <Compile Include="IDisplayAll.cs" />
     <Compile Include="ISearchRestaurants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchRestaurants.cs" />

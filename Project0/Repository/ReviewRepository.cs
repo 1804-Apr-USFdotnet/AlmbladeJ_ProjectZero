@@ -46,6 +46,22 @@ namespace Repository
             }
         }
 
+        public void Edit(int id, string field, string newvalue)
+        {
+            switch (field)
+            {
+                case "Rating":
+                    db.Set<Review>().Find(id).Rating = Convert.ToInt32(newvalue);
+                    break;
+                case "ReviewText":
+                    db.Set<Review>().Find(id).ReviewText = newvalue;
+                    break;
+                default:
+                    break;
+
+            }
+        }
+
         public decimal AverageRatings(int RestaurantID)
         {
             return (decimal)PlutoContext.Set<Review>().Where(x => x.Restaurant == RestaurantID).Average(x => x.Rating);

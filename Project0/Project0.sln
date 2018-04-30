@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchFunctions", "SearchFu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuCUI", "MenuCUI\MenuCUI.csproj", "{7E5BC247-A8BD-480B-B822-F345717BD1F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantAndReviewFunctions", "RestaurantAndReviewFunctions\RestaurantAndReviewFunctions.csproj", "{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7E5BC247-A8BD-480B-B822-F345717BD1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E5BC247-A8BD-480B-B822-F345717BD1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E5BC247-A8BD-480B-B822-F345717BD1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
