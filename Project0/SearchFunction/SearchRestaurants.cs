@@ -16,17 +16,26 @@ namespace SearchFunction
 
         public List<Restaurant> GetTopRestaurants()
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
-                return WorkUnit.RestaurantRepo.GetTopThree().ToList();
+                try
+                {
+                    return WorkUnit.RestaurantRepo.GetTopThree().ToList();
+                }
+                catch (Exception e)
+                {
+                    var logger = NLog.LogManager.GetCurrentClassLogger();
+                    logger.Debug(e, e.Message);
+                    throw;
+                }
             }
         }
 
         public List<Restaurant> FindRestaurants(string s)
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
-                return WorkUnit.RestaurantRepo.Find(x => x.Name.Contains(s)).ToList();
+                return WorkUnit.RestaurantRepo.Find(x => x.Name.ToUpper().Contains(s.ToUpper())).ToList();
             }
         }
     }

@@ -81,40 +81,39 @@
     <Compile Include="IRestaurantRepository.cs" />
     <Compile Include="IReviewRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="PlutoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Restaurant.cs">
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="RestaurantRepository.cs" />
     <Compile Include="Review.cs">
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="ReviewRepository.cs" />
-    <Compile Include="RRRavesData.Context.cs">
+    <Compile Include="RRRavesEDM.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RRRavesData.Context.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="RRRavesData.cs">
+    <Compile Include="RRRavesEDM.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
-    <Compile Include="RRRavesData.Designer.cs">
+    <Compile Include="RRRavesEDM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RRRavesData.edmx</DependentUpon>
+      <DependentUpon>RRRavesEDM.edmx</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>RRRavesData.tt</DependentUpon>
+      <DependentUpon>RRRavesEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
@@ -129,31 +128,31 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-    <EntityDeploy Include="RRRavesData.edmx">
+    <EntityDeploy Include="RRRavesEDM.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RRRavesData.Designer.cs</LastGenOutput>
+      <LastGenOutput>RRRavesEDM.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="RRRavesData.edmx.diagram">
-      <DependentUpon>RRRavesData.edmx</DependentUpon>
+    <None Include="RRRavesEDM.edmx.diagram">
+      <DependentUpon>RRRavesEDM.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RRRavesData.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RRRavesData.edmx</DependentUpon>
-      <LastGenOutput>RRRavesData.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="RRRavesData.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RRRavesData.edmx</DependentUpon>
-      <LastGenOutput>RRRavesData.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="RRRavesEDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRRavesEDM.edmx</DependentUpon>
+      <LastGenOutput>RRRavesEDM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RRRavesEDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRRavesEDM.edmx</DependentUpon>
+      <LastGenOutput>RRRavesEDM.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

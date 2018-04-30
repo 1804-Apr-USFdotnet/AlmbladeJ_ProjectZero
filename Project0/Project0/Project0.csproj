@@ -99,6 +99,10 @@
       <Project>{a349dc2a-176f-4c0c-b127-8224283dce12}</Project>
       <Name>Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RestaurantAndReviewFunctions\RestaurantAndReviewFunctions.csproj">
+      <Project>{9c79b3a0-d8bf-42ce-bedf-4f484d885b9b}</Project>
+      <Name>RestaurantAndReviewFunctions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SearchFunction\SearchFunctions.csproj">
       <Project>{710e029c-b47b-4c56-b9f0-f8e4b22ce393}</Project>
       <Name>SearchFunctions</Name>

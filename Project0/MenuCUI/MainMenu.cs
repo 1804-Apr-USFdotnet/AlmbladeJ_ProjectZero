@@ -29,6 +29,7 @@ namespace MenuCUI
                     Console.WriteLine("Select one option below.\n" +
                         "1. See top 3 restaurants.\n" +
                         "2. Search for a restaurant.\n" +
+                        "3. Display all restaurants.\n" +
                         "Press escape to exit." + retry);
                     retry = "";
                     switch (Console.ReadKey().Key)
@@ -40,6 +41,11 @@ namespace MenuCUI
                             break;
                         case ConsoleKey.D2:
                         case ConsoleKey.NumPad2:
+                            SearchMenu.Instance.Display();
+                            retry = "";
+                            break;
+                        case ConsoleKey.D3:
+                        case ConsoleKey.NumPad3:
                             SearchMenu.Instance.Display();
                             retry = "";
                             break;

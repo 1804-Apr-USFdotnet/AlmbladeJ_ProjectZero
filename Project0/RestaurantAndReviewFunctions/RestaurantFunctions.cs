@@ -15,7 +15,7 @@ namespace RestaurantAndReviewFunctions
 
         public void AddRestaurant(Restaurant r)
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
                 WorkUnit.RestaurantRepo.Add(r);
                 WorkUnit.Complete();

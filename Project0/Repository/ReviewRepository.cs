@@ -9,40 +9,40 @@ namespace Repository
 {
     public class ReviewRepository : Repository<Review>, IReviewRepository
     {
-        public ReviewRepository(PlutoContext db) : base(db) { }
+        public ReviewRepository(RRRavesDBEntities db) : base(db) { }
 
         public new void Add(Review entity)
         {
-            PlutoContext.Set<Review>().Add(entity);
+            RRRavesDBEntities.Set<Review>().Add(entity);
             int RestId = (int)entity.Restaurant;
-            PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+            RRRavesDBEntities.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
         }
 
         public new void AddRange(IEnumerable<Review> entities)
         {
-            PlutoContext.Set<Review>().AddRange(entities);
+            RRRavesDBEntities.Set<Review>().AddRange(entities);
             foreach (var item in entities)
             {
                 int RestId = (int)item.Restaurant;
-                PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+                RRRavesDBEntities.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
             }
             
         }
 
         public new void Remove(Review entity)
         {
-            PlutoContext.Set<Review>().Remove(entity);
+            RRRavesDBEntities.Set<Review>().Remove(entity);
             int RestId = (int)entity.Restaurant;
-            PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+            RRRavesDBEntities.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
         }
 
         public new void RemoveRange(IEnumerable<Review> entities)
         {
-            PlutoContext.Set<Review>().RemoveRange(entities);
+            RRRavesDBEntities.Set<Review>().RemoveRange(entities);
             foreach (var item in entities)
             {
                 int RestId = (int)item.Restaurant;
-                PlutoContext.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
+                RRRavesDBEntities.Set<Restaurant>().Find(RestId).AveRating = this.AverageRatings(RestId);
             }
         }
 
@@ -51,10 +51,10 @@ namespace Repository
             switch (field)
             {
                 case "Rating":
-                    db.Set<Review>().Find(id).Rating = Convert.ToInt32(newvalue);
+                    RRRavesDBEntities.Set<Review>().Find(id).Rating = Convert.ToInt32(newvalue);
                     break;
                 case "ReviewText":
-                    db.Set<Review>().Find(id).ReviewText = newvalue;
+                    RRRavesDBEntities.Set<Review>().Find(id).ReviewText = newvalue;
                     break;
                 default:
                     break;
@@ -64,10 +64,10 @@ namespace Repository
 
         public decimal AverageRatings(int RestaurantID)
         {
-            return (decimal)PlutoContext.Set<Review>().Where(x => x.Restaurant == RestaurantID).Average(x => x.Rating);
+            return (decimal)RRRavesDBEntities.Set<Review>().Where(x => x.Restaurant == RestaurantID).Average(x => x.Rating);
                
         }
 
-        public PlutoContext PlutoContext { get { return db as PlutoContext; } }
+        public RRRavesDBEntities RRRavesDBEntities { get { return db as RRRavesDBEntities; } }
     }
 }

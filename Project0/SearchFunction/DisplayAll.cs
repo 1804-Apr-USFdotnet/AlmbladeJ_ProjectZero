@@ -11,7 +11,7 @@ namespace SearchFunction
     {
         public List<Restaurant> RestaurantsByName()
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
                 return WorkUnit.RestaurantRepo.GetAll().OrderBy(x => x.Name).ToList();
             }
@@ -19,7 +19,7 @@ namespace SearchFunction
 
         public List<Restaurant> RestaurantsByRating()
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
                 return WorkUnit.RestaurantRepo.GetAll().OrderByDescending(x => x.AveRating).ToList();
             }
@@ -27,7 +27,7 @@ namespace SearchFunction
 
         public List<Review> ReviewsAscending()
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
                 return WorkUnit.ReviewRepo.GetAll().OrderBy(x => x.Rating).ToList();
             }
@@ -35,7 +35,7 @@ namespace SearchFunction
 
         public List<Review> ReviewsDescending()
         {
-            using (var WorkUnit = new UnitOfWork(new PlutoContext()))
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
                 return WorkUnit.ReviewRepo.GetAll().OrderByDescending(x => x.Rating).ToList();
             }

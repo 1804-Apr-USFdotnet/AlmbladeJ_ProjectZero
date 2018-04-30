@@ -10,11 +10,11 @@ namespace Repository
 {
     public class RestaurantRepository : Repository<Restaurant>, IRestaurantRepository
     {
-        public RestaurantRepository(PlutoContext db) : base(db) { }
+        public RestaurantRepository(RRRavesDBEntities db) : base(db) { }
 
         public IEnumerable<Restaurant> GetTopThree()
         {
-            return PlutoContext.Set<Restaurant>().OrderByDescending(x => x.AveRating).Take(3);
+            return RRRavesDBEntities.Set<Restaurant>().OrderByDescending(x => x.AveRating).Take(3);
         }
 
         public void Edit(int id, string field, string newvalue)
@@ -22,22 +22,22 @@ namespace Repository
             switch (field)
             {
                 case "Name":
-                    db.Set<Restaurant>().Find(id).Name = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).Name = newvalue;
                     break;
                 case "Address":
-                    db.Set<Restaurant>().Find(id).Address = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).Address = newvalue;
                     break;
                 case "City":
-                    db.Set<Restaurant>().Find(id).City = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).City = newvalue;
                     break;
                 case "ZipCode":
-                    db.Set<Restaurant>().Find(id).Zipcode = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).Zipcode = newvalue;
                     break;
                 case "Phone":
-                    db.Set<Restaurant>().Find(id).Phone = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).Phone = newvalue;
                     break;
                 case "Website":
-                    db.Set<Restaurant>().Find(id).Website = newvalue;
+                    RRRavesDBEntities.Set<Restaurant>().Find(id).Website = newvalue;
                     break;
                 default:
                     break;
@@ -45,6 +45,6 @@ namespace Repository
             }
         }
 
-        public PlutoContext PlutoContext { get { return db as PlutoContext; } }
+        public RRRavesDBEntities RRRavesDBEntities { get { return db as RRRavesDBEntities; } }
     }
 }

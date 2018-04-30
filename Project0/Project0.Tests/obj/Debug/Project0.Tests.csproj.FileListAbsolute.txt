@@ -170,3 +170,5 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantAndReviewFunctions.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantAndReviewFunctions.pdb

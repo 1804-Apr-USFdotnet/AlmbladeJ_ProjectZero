@@ -9,9 +9,9 @@ namespace Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly PlutoContext db;
+        private readonly RRRavesDBEntities db;
 
-        public UnitOfWork(PlutoContext context)
+        public UnitOfWork(RRRavesDBEntities context)
         {
             db = context;
             RestaurantRepo = new RestaurantRepository(context);
