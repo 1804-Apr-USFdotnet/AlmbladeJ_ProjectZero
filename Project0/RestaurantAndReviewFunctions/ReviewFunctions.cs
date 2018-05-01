@@ -7,34 +7,34 @@ using Repository;
 
 namespace RestaurantAndReviewFunctions
 {
-    public class RestaurantFunctions
+    class ReviewFunctions
     {
-        public RestaurantFunctions() {        }
+        public ReviewFunctions() { }
 
-        public void AddRestaurant(Restaurant r)
+        public void AddReview(Review r)
         {
             using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
             {
-                WorkUnit.RestaurantRepo.Add(r);
+                WorkUnit.ReviewRepo.Add(r);
                 WorkUnit.Complete();
             }
         }
 
-        public void RemoveRestaurant(int id)
+        public void RemoveReview(int id)
         {
             using (var uow = new UnitOfWork(new RRRavesDBEntities()))
             {
-                var temp = uow.RestaurantRepo.Get(id);
-                uow.RestaurantRepo.Remove(temp);
+                var temp = uow.ReviewRepo.Get(id);
+                uow.ReviewRepo.Remove(temp);
                 uow.Complete();
             }
         }
 
-        public void UpdateRestaurant(int id, string field, string newvalue)
+        public void UpdateReview(int id, string field, string newvalue)
         {
             using (var uow = new UnitOfWork(new RRRavesDBEntities()))
             {
-                uow.RestaurantRepo.EditRestaurant(id, field, newvalue);
+                uow.ReviewRepo.EditReview(id, field, newvalue);
                 uow.Complete();
             }
         }

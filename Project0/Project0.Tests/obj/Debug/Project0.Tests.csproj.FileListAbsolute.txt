@@ -172,3 +172,8 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantAndReviewFunctions.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantAndReviewFunctions.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\MenuCUI.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\RestaurantAndReviewFunctions.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\SearchFunction.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\JsonSerializer.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\JsonSerializer.pdb

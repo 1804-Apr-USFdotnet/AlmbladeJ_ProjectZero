@@ -12,7 +12,7 @@ namespace Project0
     {
         static void Main(string[] args)
         {
-                        
+            
         }
     }
 }

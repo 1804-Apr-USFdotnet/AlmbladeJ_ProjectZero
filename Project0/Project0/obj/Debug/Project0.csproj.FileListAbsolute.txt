@@ -30,13 +30,11 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Project0.exe
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Project0.pdb
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\MenuCUI.dll
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Newtonsoft.Json.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\NLog.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\xunit.assert.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\xunit.core.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\xunit.execution.desktop.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\MenuCUI.pdb
-C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Newtonsoft.Json.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\NLog.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\xunit.assert.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\xunit.core.xml
@@ -57,3 +55,6 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantAndReviewFunctions.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantAndReviewFunctions.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\MenuCUI.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantAndReviewFunctions.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\SearchFunction.dll.config

@@ -46,7 +46,7 @@ namespace Repository
             }
         }
 
-        public void Edit(int id, string field, string newvalue)
+        public void EditReview(int id, string field, string newvalue)
         {
             switch (field)
             {

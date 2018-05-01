@@ -17,7 +17,7 @@ namespace Repository
             return RRRavesDBEntities.Set<Restaurant>().OrderByDescending(x => x.AveRating).Take(3);
         }
 
-        public void Edit(int id, string field, string newvalue)
+        public void EditRestaurant(int id, string field, string newvalue)
         {
             switch (field)
             {

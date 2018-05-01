@@ -87,10 +87,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestSearchFunctions.cs" />
+    <Compile Include="JsonSerializerTest.cs" />
+    <Compile Include="SearchFunctionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JsonSerializer\JsonSerializer.csproj">
+      <Project>{27f46f86-d0d3-4abe-88f8-1bd87ee27133}</Project>
+      <Name>JsonSerializer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MenuCUI\MenuCUI.csproj">
       <Project>{7e5bc247-a8bd-480b-b822-f345717bd1f1}</Project>
       <Name>MenuCUI</Name>
