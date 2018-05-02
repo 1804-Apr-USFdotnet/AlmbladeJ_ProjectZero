@@ -19,15 +19,14 @@ namespace Project0.Tests
         public void RepoAdd_AddRestaurant_CheckAdded()
         {
             //Arrange
-            var dbmock = new Mock<RRRavesDBEntities>();
-            var dbsetmock = new Mock<DbSet<Restaurant>>();
-            dbsetmock.Setup(x => x.Add(It.IsAny<Restaurant>())).Returns((Restaurant u) => u);
-            dbmock.Setup(x => x.Restaurants).Returns(dbsetmock.Object);
+            var dbmock = new RRRavesDBEntities();
 
-            var restrepo = new RestaurantRepository(dbmock.Object);
+
+            var restrepo = new RestaurantRepository(dbmock);
 
 
             Restaurant restaurantEx = new Restaurant();
+            restaurantEx.ID_Restaurant = 12;
 
 
             //Act
@@ -36,6 +35,30 @@ namespace Project0.Tests
 
             //Assert
             Assert.Equal(restaurantEx, actual);
+        }
+
+        [Fact]
+        public void RepoAdd_AddReview_CheckAdded()
+        {
+            //Arrange
+            var dbmock = new RRRavesDBEntities();
+
+
+            var revrepo = new ReviewRepository(dbmock);
+
+
+            Review reviewEx = new Review();
+            reviewEx.ID_Review = 12;
+            reviewEx.Rating = 0;
+            reviewEx.Restaurant = 1;
+
+
+            //Act
+            revrepo.Add(reviewEx);
+            var actual = revrepo.Get(reviewEx.ID_Review);
+
+            //Assert
+            Assert.Equal(reviewEx, actual);
         }
     }
 }
