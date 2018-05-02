@@ -7,7 +7,7 @@ using Repository;
 
 namespace SearchFunction
 {
-    class DisplayAll : IDisplayAll
+    public class DisplayAll : IDisplayAll
     {
         public List<Restaurant> RestaurantsByName()
         {

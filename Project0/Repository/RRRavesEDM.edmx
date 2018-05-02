@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="RRRavesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="RRRavesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -20,13 +20,13 @@
             <PropertyRef Name="ID_Restaurant" />
           </Key>
           <Property Name="ID_Restaurant" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="Address" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="City" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Zipcode" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="Phone" Type="nvarchar" MaxLength="14" Nullable="false" />
-          <Property Name="Website" Type="nvarchar" MaxLength="20" />
-          <Property Name="AveRating" Type="decimal" Precision="3" Scale="2" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="AveRating" Type="decimal" Precision="3" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="Reviews">
           <Key>
@@ -89,8 +89,7 @@
             <End Role="Reviews" EntitySet="Reviews" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RRRavesDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -109,13 +108,13 @@
             <PropertyRef Name="ID_Restaurant" />
           </Key>
           <Property Name="ID_Restaurant" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Address" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="City" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Zipcode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="14" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Website" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="AveRating" Type="Decimal" Precision="3" Scale="2" />
+          <Property Name="Website" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AveRating" Type="Decimal" Nullable="false" Precision="3" Scale="2" />
           <NavigationProperty Name="Reviews" Relationship="Self.FK__Reviews__Restaur__45F365D3" FromRole="Restaurants" ToRole="Reviews" />
         </EntityType>
         <EntityType Name="Review">

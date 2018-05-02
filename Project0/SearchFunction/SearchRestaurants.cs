@@ -38,5 +38,13 @@ namespace SearchFunction
                 return WorkUnit.RestaurantRepo.Find(x => x.Name.ToUpper().Contains(s.ToUpper())).ToList();
             }
         }
+
+        public Restaurant GetRestaurant(int id)
+        {
+            using (var WorkUnit = new UnitOfWork(new RRRavesDBEntities()))
+            {
+                return WorkUnit.RestaurantRepo.Get(id);
+            }
+        }
     }
 }

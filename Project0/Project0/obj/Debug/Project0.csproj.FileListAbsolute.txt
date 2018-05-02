@@ -58,3 +58,7 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\MenuCUI.dll.config
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\RestaurantAndReviewFunctions.dll.config
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\SearchFunction.dll.config
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\JsonSerializer.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\JsonSerializer.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0\bin\Debug\Newtonsoft.Json.xml

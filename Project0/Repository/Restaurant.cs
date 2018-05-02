@@ -27,7 +27,7 @@ namespace Repository
         public string Zipcode { get; set; }
         public string Phone { get; set; }
         public string Website { get; set; }
-        public Nullable<decimal> AveRating { get; set; }
+        public decimal AveRating { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Review> Reviews { get; set; }

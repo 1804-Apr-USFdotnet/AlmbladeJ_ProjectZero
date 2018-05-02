@@ -7,7 +7,7 @@ using Repository;
 
 namespace RestaurantAndReviewFunctions
 {
-    class ReviewFunctions
+    public class ReviewFunctions
     {
         public ReviewFunctions() { }
 

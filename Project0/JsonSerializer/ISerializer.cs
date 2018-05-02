@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repository;
 
-namespace JsonSerializer
+namespace MyJsonSerializer
 {
     public interface ISerializer
     {
-        void RestaurantToJson(string filepath);
-        void JsonToRestaurant(string filepath);
+        void RestaurantToJson(Restaurant restaurant, string filepath);
+        Restaurant JsonToRestaurant(string filepath);
+        void ReviewToJson(Review review, string filepath);
+        Review JsonToReview(string filepath);
     }
 }

@@ -1,4 +1,0 @@
-Here is where I keep notes on what I'm doing so that I can add them into the
-commit message later.
-
-	Added AverageRatings interface, Restaurant interface.

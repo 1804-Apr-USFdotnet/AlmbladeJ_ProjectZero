@@ -8,6 +8,8 @@ namespace Repository
 {
     public interface IAverager
     {
-        decimal AverageRatings(int RestaurantID);
+        void AverageRatingsAdd(int RestaurantID, int NewRating);
+        void AverageRatingsEdit(int RestaurantID, int OldRating, int NewRating);
+        void AverageRatingsRemove(int RestaurantID, int OldRating);
     }
 }

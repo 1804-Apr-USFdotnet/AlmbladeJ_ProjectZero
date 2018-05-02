@@ -177,3 +177,12 @@ C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\SearchFunction.dll.config
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\JsonSerializer.dll
 C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\JsonSerializer.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.AutoMoq.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.Xunit2.dll
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.AutoMoq.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.AutoMoq.xml
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.Xunit2.pdb
+C:\Users\James\Documents\School Stuff\JamesAProject0\Project0\Project0.Tests\bin\Debug\AutoFixture.Xunit2.xml

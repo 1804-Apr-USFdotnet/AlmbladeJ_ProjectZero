@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuCUI", "MenuCUI\MenuCUI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantAndReviewFunctions", "RestaurantAndReviewFunctions\RestaurantAndReviewFunctions.csproj", "{9C79B3A0-D8BF-42CE-BEDF-4F484D885B9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonSerializer", "JsonSerializer\JsonSerializer.csproj", "{27F46F86-D0D3-4ABE-88F8-1BD87EE27133}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyJsonSerializer", "JsonSerializer\MyJsonSerializer.csproj", "{27F46F86-D0D3-4ABE-88F8-1BD87EE27133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

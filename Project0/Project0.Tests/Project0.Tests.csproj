@@ -35,6 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoFixture, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoFixture.4.2.1\lib\net452\AutoFixture.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoFixture.AutoMoq, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoFixture.AutoMoq.4.2.1\lib\net452\AutoFixture.AutoMoq.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoFixture.Xunit2, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoFixture.Xunit2.4.2.1\lib\net452\AutoFixture.Xunit2.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -87,14 +96,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JsonSerializerTest.cs" />
-    <Compile Include="SearchFunctionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JsonSerializer\JsonSerializer.csproj">
+    <ProjectReference Include="..\JsonSerializer\MyJsonSerializer.csproj">
       <Project>{27f46f86-d0d3-4abe-88f8-1bd87ee27133}</Project>
-      <Name>JsonSerializer</Name>
+      <Name>MyJsonSerializer</Name>
     </ProjectReference>
     <ProjectReference Include="..\MenuCUI\MenuCUI.csproj">
       <Project>{7e5bc247-a8bd-480b-b822-f345717bd1f1}</Project>

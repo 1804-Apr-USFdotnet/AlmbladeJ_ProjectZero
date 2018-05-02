@@ -90,6 +90,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JsonSerializer\MyJsonSerializer.csproj">
+      <Project>{27f46f86-d0d3-4abe-88f8-1bd87ee27133}</Project>
+      <Name>MyJsonSerializer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MenuCUI\MenuCUI.csproj">
       <Project>{7e5bc247-a8bd-480b-b822-f345717bd1f1}</Project>
       <Name>MenuCUI</Name>
